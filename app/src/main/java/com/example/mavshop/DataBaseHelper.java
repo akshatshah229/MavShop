@@ -1,6 +1,4 @@
 package com.example.mavshop;
-
-
 import android.content.Context;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
@@ -33,6 +31,7 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         boolean mDataBaseExist = checkDataBase();
         if(!mDataBaseExist) {
             this.getReadableDatabase();
+            System.out.println("Yes it is uploading");
             this.close();
             try {
                 // Copy the database from assests

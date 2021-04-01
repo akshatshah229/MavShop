@@ -1,3 +1,4 @@
+
 package com.example.mavshop;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -77,6 +78,10 @@ public class Register extends AppCompatActivity {
         else if(phone_str.length()!=10)
         {
             Toast.makeText(Register.this, "Please enter valid Phone Number!",Toast.LENGTH_LONG).show();
+        }
+        else if(password_str.length()<5)
+        {
+            Toast.makeText(Register.this, "Please enter atleast 5 digit password!",Toast.LENGTH_LONG).show();
         }
         else
         {

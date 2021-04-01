@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
         password_text = findViewById(R.id.editTextTextPassword);
 
 
-        System.out.println("*******"+email_str+" "+password_str);
+       // System.out.println("*******"+email_str+" "+password_str);
         login_btn = findViewById(R.id.button);
 
         login_btn.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +49,10 @@ public class Login extends AppCompatActivity {
         else if(email_str.equals("") || password_str.equals(""))
         {
             Toast.makeText(Login.this, "UserName and Password missing!",Toast.LENGTH_LONG).show();
+        }
+        else if(!email_str.contains("mavs.uta.edu"))
+        {
+            Toast.makeText(Login.this, "Invalid Email-Id.Please enter valid id!",Toast.LENGTH_LONG).show();
         }
         else
         {

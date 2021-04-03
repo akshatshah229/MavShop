@@ -2,6 +2,7 @@ package com.example.mavshop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -59,6 +60,8 @@ public class Login extends AppCompatActivity {
             if(mDbHelper.checkifUserExists(email_str,password_str))
             {
                 Toast.makeText(Login.this, "Login successfull!",Toast.LENGTH_LONG).show();
+                Intent intent1 = new Intent(this, categories.class);
+                startActivity(intent1);
             }
             else
             {

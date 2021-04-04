@@ -47,7 +47,8 @@
                     android:textAlignment="textEnd"
                     android:textColor="@color/black"
                     android:textSize="45sp"
-                    android:fontFamily="sans-serif-thin">
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end">
 
                 </TextView>
 
@@ -60,14 +61,14 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/furniture_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:text="See All"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
-                    android:textColor="@color/black">
+                    android:textColor="@color/black"
+                    android:onClick="OpenFurniture">
                 </Button>
             </RelativeLayout>
 
@@ -100,14 +101,14 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/electronics_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:text="See All"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
-                    android:textColor="@color/black">
+                    android:textColor="@color/black"
+                    android:onClick="OpenElectronics">
                 </Button>
             </RelativeLayout>
 
@@ -128,7 +129,8 @@
                     android:paddingTop="10dp"
                     android:paddingRight="10dp"
                     android:textAlignment="textEnd"
-                    android:fontFamily="sans-serif-thin">
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end">
                 </TextView>
 
                 <ImageView
@@ -141,14 +143,14 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/kitchenware_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:text="See All"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
-                    android:textColor="@color/black">
+                    android:textColor="@color/black"
+                    android:onClick="OpenKitchenware">
                 </Button>
 
             </RelativeLayout>
@@ -182,14 +184,14 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/organizers_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
                     android:text="See All"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
-                    android:textColor="@color/black">
+                    android:textColor="@color/black"
+                    android:onClick="OpenOrganizers">
                 </Button>
             </RelativeLayout>
 
@@ -210,7 +212,8 @@
                     android:paddingTop="10dp"
                     android:paddingRight="10dp"
                     android:textAlignment="textEnd"
-                    android:fontFamily="sans-serif-thin">
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end">
                 </TextView>
 
                 <ImageView
@@ -222,14 +225,14 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/books_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentRight="true"
                     android:text="See All"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
-                    android:textColor="@color/black">
+                    android:textColor="@color/black"
+                    android:onClick="OpenBooks">
                 </Button>
             </RelativeLayout>
 
@@ -260,14 +263,16 @@
                 </ImageView>
 
                 <Button
+                    android:id="@+id/misc_btn"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_alignParentBottom="true"
                     android:layout_alignParentLeft="true"
-                    android:background="@drawable/roundstyle"
-                    android:backgroundTint="#FFDFD3"
                     android:text="See All"
-                    android:textColor="@color/black"></Button>
+                    android:textColor="@color/black"
+                    android:onClick="OpenMisc">
+
+                </Button>
             </RelativeLayout>
 
             <RelativeLayout
@@ -275,30 +280,30 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="25dp"
                 android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.bottomnavigation.BottomNavigationView
+                        android:id="@+id/navigation_menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:alpha="50"
+                        android:paddingBottom="10dp"
+                        app:menu="@menu/navigation_menu">
+
+                    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+                </RelativeLayout>
+
             </RelativeLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation_menu"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            app:itemIconTint="#0099CC"
-            android:alpha="50"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/navigation_menu"
-            android:paddingBottom="10dp">
-
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
-    </RelativeLayout>
 
 
 </RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "974282702946",
+    "project_id": "mavshopnew",
+    "storage_bucket": "mavshopnew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974282702946:android:cc7b406604c81a2744113b",
+        "android_client_info": {
+          "package_name": "com.team2.mavshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974282702946-pseggmj3e9013o85k82pdllfhcm7h11d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAu9bU25Ew3uVT0xdaQEPXfWRz80z4JO6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974282702946-pseggmj3e9013o85k82pdllfhcm7h11d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

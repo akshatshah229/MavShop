@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categories">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Categories"
+                android:textSize="30sp"
+                android:background="#0099CC"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-smallcaps">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FFDFD3"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end"
+                    android:padding="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Furniture"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="45sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/furniture"
+                    android:paddingLeft="10dp">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/furniture_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenFurniture">
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#C5C9AC"
+                    android:text="Electronics"
+                    android:textColor="@color/black"
+                    android:textSize="45sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-thin">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/electronics"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentRight="true">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/electronics_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenElectronics">
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#F3D67F"
+                    android:text="Kitchenware"
+                    android:textColor="@color/black"
+                    android:textSize="45dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:src= "@drawable/kitchenware"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentLeft="true">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/kitchenware_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenKitchenware">
+                </Button>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#FEF3DE"
+                    android:text="Organizers"
+                    android:textColor="@color/black"
+                    android:textSize="45sp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:fontFamily="sans-serif-thin">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:src= "@drawable/organizers"
+                    android:paddingLeft="10dp"
+                    android:layout_alignParentRight="true">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/organizers_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenOrganizers">
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@color/white"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#D9E5AE"
+                    android:text="Books"
+                    android:textColor="@color/black"
+                    android:textSize="45sp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="textEnd"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="end">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/books">
+
+                </ImageView>
+
+                <Button
+                    android:id="@+id/books_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenBooks">
+                </Button>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/roundstyle"
+                    android:backgroundTint="#B3D6E8"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="Miscellaneous"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-thin"
+                    android:textSize="45sp">
+                </TextView>
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="150dp"
+                    android:paddingLeft="10dp"
+                    android:src="@drawable/miscellaneous"
+                    android:layout_alignParentRight="true">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/misc_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="See All"
+                    android:textColor="@color/black"
+                    android:onClick="OpenMisc">
+
+                </Button>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation_menu"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:alpha="50"
+            android:paddingBottom="10dp"
+            app:menu="@menu/navigation_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

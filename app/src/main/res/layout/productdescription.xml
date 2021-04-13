@@ -42,7 +42,8 @@
                 android:id="@+id/rating"
                 android:layout_below="@id/productimage"
                 android:background="#fff"
-                android:gravity="center">
+                android:gravity="center"
+                tools:ignore="Orientation">
 
             </LinearLayout>
 

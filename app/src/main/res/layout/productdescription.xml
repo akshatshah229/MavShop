@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="match_parent"
     tools:context=".ProductDesc">
     
     <ScrollView
@@ -34,19 +35,109 @@
                     android:layout_marginTop="20dp"
                     android:elevation="4dp"
                     android:src="@drawable/ic_baseline_share_24"/>
+
+                <ImageView
+                    android:layout_height="38dp"
+                    android:layout_width="38dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="4dp"
+                    android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
             </FrameLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/rating"
-                android:layout_below="@id/productimage"
-                android:background="#fff"
-                android:gravity="center"
-                tools:ignore="Orientation">
-
-            </LinearLayout>
-
 
         </RelativeLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="402dp"
+        android:layout_height="85dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="385dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/pdname"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:text="Product Name"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:gravity="left"
+           android:text="Alchemist by Paulo Coelho"
+           android:textColor="@color/black"
+           android:layout_weight="1"
+           android:textSize="16dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pprice"
+        android:layout_width="404dp"
+        android:layout_height="61dp"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="476dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/csellar"
+        android:layout_width="186dp"
+        android:layout_height="49dp"
+        android:text="Contact Seller"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+    <Button
+        android:id="@+id/buynow"
+        android:layout_width="183dp"
+        android:layout_height="47dp"
+        android:text="Buynow"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="633dp" />
+
+    <LinearLayout
+        android:id="@+id/rating"
+        android:layout_width="404dp"
+        android:layout_height="90dp"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="-7dp"
+        tools:layout_editor_absoluteY="537dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="left"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

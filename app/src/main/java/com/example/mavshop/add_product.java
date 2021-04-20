@@ -16,20 +16,30 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class add_product extends AppCompatActivity {
     ImageView imageview;
-    Button button;
+    Button button_finish;
     private static final int PICK_IMAGE = 100;
     Uri imageUri;
+    TextView name,price,phone_number,description;
+    RadioButton category;
+    FireBaseHelper fbase;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_product);
+        button_finish = findViewById(R.id.bt_finish);
+        name = findViewById(R.id.prod_title);
+        price =findViewById(R.id.prod_price);
+        phone_number = findViewById(R.id.prod_pn);
+        description = findViewById(R.id.prod_desc);
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigation_menu);
         bottomNavigationView.setSelectedItemId(R.id.add_product);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -57,6 +67,23 @@ public class add_product extends AppCompatActivity {
                 openGallery();
             }
         });
+
+        button_finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { toPayment_Page(); }
+        });
+    }
+
+    private void toPayment_Page() {
+        String prod_name= name.getText().toString();
+        String prod_price = price.getText().toString();
+        String prod_desc = description.getText().toString();
+        String prod_phonenum = phone_number.getText().toString();
+        String prod_category = "Misc";
+        String flag = "0";
+        System.out.println("**"+imageUri);
+        Intent intent1 = new Intent(this, Payment.class);
+        startActivity(intent1);
     }
 
     private void openGallery() {
@@ -76,6 +103,7 @@ public class add_product extends AppCompatActivity {
             String picturePath = cursor.getString(columnIndex);
             cursor.close();
             imageview.setImageBitmap(BitmapFactory.decodeFile(picturePath));
+
         }
     }
 

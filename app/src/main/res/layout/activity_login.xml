@@ -5,7 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Login">
-
+    <TextView
+        android:id="@+id/forget_pass_text"
+        android:layout_width="124dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="364dp"
+        android:clickable="true"
+        android:text="Forget Password?"
+        android:textColor="@color/purple_200"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textView2"
         android:layout_width="99dp"

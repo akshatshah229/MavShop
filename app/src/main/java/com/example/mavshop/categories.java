@@ -42,19 +42,19 @@ public class categories extends AppCompatActivity {
                 return false;
             }
         });
-        post_item = findViewById(R.id.action_cam);
+        /*post_item = findViewById(R.id.add_product);
 
         post_item.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 post_Item();
             }
-        });
+        });*/
     }
 
     private void post_Item() {
-
-
+        Intent intent1 = new Intent(this,add_product.class);
+        startActivity(intent1);
     }
 
 

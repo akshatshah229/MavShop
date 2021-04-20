@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MavShop">
-        <activity android:name=".product_description"></activity>
+        <activity android:name=".view_profile"></activity>
+        <activity android:name=".product_description" />
         <activity android:name=".add_product" />
         <activity android:name=".Miscellaneous" />
         <activity android:name=".Books" />

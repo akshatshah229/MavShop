@@ -3,140 +3,164 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ProductDesc">
+    tools:context=".product_description">
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        tools:ignore="MissingConstraints">
-        <RelativeLayout
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <FrameLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="379dp"
-                android:id="@+id/productimage"
-                android:background="#0099CC"
-                android:elevation="4dp"
-                android:visibility="visible">
+                android:layout_height="200dp">
+
                 <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="238dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="201dp"
                     android:layout_gravity="center"
-                    android:background="@drawable/alchemist"/>
+                    android:background="@drawable/alchemist" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Product Name"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Table"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
 
-                <ImageView
-                    android:layout_height="38dp"
-                    android:layout_width="38dp"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="20dp"
-                    android:elevation="4dp"
-                    android:src="@drawable/ic_baseline_share_24"/>
-
-                <ImageView
-                    android:layout_height="38dp"
-                    android:layout_width="38dp"
-                    android:layout_gravity="left"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginTop="20dp"
-                    android:elevation="4dp"
-                    android:src="@drawable/ic_baseline_keyboard_backspace_24"/>
-            </FrameLayout>
-
-        </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Price"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Table"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Category"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/cat"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Furniture"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Description"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:text="Description of the product"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Seller Name"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/seller_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Name of the Seller"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Seller Contact Number"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/seller_pn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="2123456784"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buy_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Buy Now"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/name"
-        android:layout_width="402dp"
-        android:layout_height="85dp"
-        android:background="#fff"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="385dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:id="@+id/pdname"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:text="Product Name"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:text="Alchemist by Paulo Coelho"
-            android:textColor="@color/black"
-            android:layout_weight="1"
-            android:textSize="16dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/pprice"
-        android:layout_width="404dp"
-        android:layout_height="61dp"
-        android:background="#fff"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="476dp"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:text="Price"
-            android:textColor="@color/black"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/csellar"
-        android:layout_width="186dp"
-        android:layout_height="49dp"
-        android:text="Contact Seller"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="631dp" />
-
-    <Button
-        android:id="@+id/buynow"
-        android:layout_width="183dp"
-        android:layout_height="47dp"
-        android:text="Buynow"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="633dp" />
-
-    <LinearLayout
-        android:id="@+id/rating"
-        android:layout_width="404dp"
-        android:layout_height="90dp"
-        android:background="#fff"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="-7dp"
-        tools:layout_editor_absoluteY="537dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="left"
-            android:text="Description"
-            android:textColor="@color/black"
-            android:layout_weight="1"
-            android:textSize="20sp"/>
-    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
